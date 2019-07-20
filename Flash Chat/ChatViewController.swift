@@ -209,7 +209,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             navigationController?.popToRootViewController(animated: true)
         }
         catch {
-            print("error, there was a problem signing out.")
+            
+            print(error)
+            
+            let logOutAlert = UIAlertController(title: "Connection Issue", message: "Please check make sure you are conneted to the internet", preferredStyle: .alert)
+            
+            logOutAlert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            
+            present(logOutAlert, animated: true)
+            
         }
         
     }
