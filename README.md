@@ -14,5 +14,5 @@ Private group chat messaging app that I made in an iOS Developer course
 
 # What I added
 
-- Alerts if there was an error signing for users
+- Alerts if there was an error signing in for users
 - UI changes via color in the chat view
